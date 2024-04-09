@@ -426,6 +426,10 @@ margin-bottom: 8px;
   overflow: hidden;
 }
 
+.footer-container{
+  display: flex;
+}
+
 .container-footer-link{
 
 }
@@ -433,17 +437,21 @@ margin-bottom: 8px;
 .social-media-text{
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px; 
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
 
 .footer-icon-list {
+  width: 208px;
+  height: 40px;
   display: flex;
   justify-content: center;
-  gap: 24px;
+  align-content: center;
+  gap: 16px;
 }
+
 .footer-icon-item {
   width: 40px;
   height: 40px;
