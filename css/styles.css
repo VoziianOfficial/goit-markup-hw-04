@@ -474,10 +474,8 @@ margin-bottom: 8px;
    fill: #f4f4fd;
 }
 
-.footer-icon-link:hover {
-  background-color: #31d0aa;
-}
-
+.footer-icon-link:hover, 
 .footer-icon-link:focus {
   background-color: #31d0aa;
 }
+
