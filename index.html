@@ -455,17 +455,19 @@
       </div>
     </footer>
     
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       
       <div class="modal">
         <button class="modal-close-btn" type="button">
-        <svg class="modal-icon" width="8px" height="8px">
+        <svg class="modal-icon-close" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
       <p class="modal-title">Leave your contacts and we will call you back</p>
       
       <form class="modal-form">
+
+        <div class="user-blank">
 
         <div class="modal-filed">
         <label for="name" class="modal-label">Name</label>
@@ -497,9 +499,26 @@
           </div>
         </div>
         
-        <input type="checkbox" name="privacy" id="privacy" class="modal-check">
+        <div class="modal-filed">
+          <label class="modal-label" for="user-comment">Comment</label>
+          <textarea class="modal-text" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
+        </div>
+
+        </div>
+
+        <div class="modal-filed">
+        <input type="checkbox" name="policy" id="policy" class="modal-check visually-hidden" value="true" >
+        <label for="policy" class="check-text"> 
+          <span class="check-icon">
+          <svg class="check-icon-wrap" width="10" height="8">
+            <use href="./images/icons.svg#icon-vector"></use>
+          </svg>
+        </span>I accept the terms and conditions of the<a href class="policy-link"> Privacy Policy</a>
+      </label>
+
+        </div>
         
-        <button type="submit" class="modal-send-btn" >Send</button>
+        <button type="submit" class="modal-send-btn">Send</button>
 
       </form>
       </div>
